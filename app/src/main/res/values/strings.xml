@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MVVM All You Can Use</string>
+    <string name="title_activity_navigation">AllYouCanUse</string>
+    <string name="title_home">Home</string>
+    <string name="title_riwayat">Riwayat</string>
+    <string name="title_profile">Profile</string>
+    <string name="descTentang">All you can use adalah aplikasi peminjaman sarana dan prasarana yang berbasis platform android yang bertujuan untuk mempermudah peminjaman sarana dan prasarana.\n\nDibentuk pada tahun 2023, All you can use sudah membantu lebih dari 150 instansi maupun sekolah dalam peminjaman sarana dan prasarana. Dirancang User-Friendly agar dapat dipahami oleh berbagai kalangan usia user.\n\n
+
+All you can use sendiri dibuat dengan bahasa pemrograman Kotlin, sehingga aplikasi akan sangat terasa lebih ringan dibandingkan dengan aplikasi yang menggunakan bahasa pemrograman Java.\n\n
+
+Pembuat aplikasi sangat berharap besar sangat bisa membantu siapapun dengan dibuatnya aplikasi All you can use. Semoga bisa digunakan dengan bijak karena aplikasi ini dibuat dengan hati</string>
+</resources>

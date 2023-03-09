@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.module.profile.ProfileFragment"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/productsansbold"
+            android:text="Profil"/>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logosmk1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            app:cardCornerRadius="@dimen/_30sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_inisial"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_22sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="IV"/>
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ihsan Ertansa Azhar"
+                android:textColor="@color/black"
+                android:fontFamily="@font/productsansbold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_nisn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0052945218"
+                android:textColor="@color/black"
+                android:fontFamily="@font/productsansregular"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ihsan.azhar41@gmail.com"
+                android:textColor="@color/black"
+                android:fontFamily="@font/productsansregular"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/MyCardView"
+            android:paddingTop="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/green">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/shapewidget"/>
+
+                <LinearLayout
+                    android:id="@+id/btn_editprofil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/iconprofile"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="edit profil"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/productsansbold"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="30dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btn_tentang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/iconinfo"
+                        android:layout_marginStart="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tentang kami"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/productsansbold"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="30dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btn_bantuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/iconmessage"
+                        android:layout_marginStart="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="butuh bantuan ?"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/productsansbold"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="30dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/iconlogout"
+                        android:layout_marginStart="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="keluar"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/productsansbold"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="30dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="45dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/iconlove"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F3F3F3"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/productsansbold"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="luar biasa, anda mulai mengenal aplikasi all you can use. gunakanlah untuk memudahkan perizinan dan peminjaman sarana dan prasrana"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</LinearLayout>

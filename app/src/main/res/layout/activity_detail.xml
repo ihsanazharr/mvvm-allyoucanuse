@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.module.detailHalaman.DetailBarangActivity">
+
+    <include
+        android:id="@+id/ly_toolbar"
+        layout="@layout/layout_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nama_item"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Barang"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/productsansbold"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_bag"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:text="Tersedia"
+                android:textColor="@color/orange"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_stok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_gravity="center"
+                android:text="12 pcs"
+                android:textColor="@color/orange"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_280sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:backgroundTint="#C8C8C8">
+            <TextView
+                android:id="@+id/tv_deskripsi_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/productsansregular"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio metus, sodales ut dui id, porttitor lacinia orci. In tempor iaculis fermentum. Maecenas id orci sit amet odio convallis blandit. Pellentesque et eros sit amet odio ornare eleifend. Sed varius sit amet turpis faucibus sagittis. Vestibulum nec enim egestas, varius dolor et, vulputate ex. Cras sodales ipsum vitae sapien posuere, quis sagittis lacus interdum. Mauris gravida rhoncus orci, volutpat molestie neque fermentum ac."/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btn_pinjam_item"
+            android:layout_width="@dimen/_286sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pinjam"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>
